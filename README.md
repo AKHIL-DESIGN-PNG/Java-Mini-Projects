@@ -1,4 +1,3 @@
-```markdown
 # 💻 Java Data Structure & CRUD Application Suite
 
 ## 🧾 Overview
@@ -11,8 +10,7 @@ This project is a modular Java application suite that demonstrates:
 
 ## 📁 Project Structure
 
-```
-
+```<pre>
 📦 MainHub.java
 │
 ├── 🧮 DataStructureCalculatorApp.java
@@ -21,12 +19,11 @@ This project is a modular Java application suite that demonstrates:
 │   └── 📋 ArrayListCalculator.java
 │
 ├── 🖥️ CrudConsoleApp.java
-│   └── 📄 \[Uses: create.txt, read.txt, update.txt, delete.txt, drop.txt]
+│   └── 📄 [Uses: create.txt, read.txt, update.txt, delete.txt, drop.txt]
 │
 └── 🎨 CrudGuiApp.java (JavaFX + Oracle DB)
-└── 🗃️ \[Uses: create.txt, read.txt, update.txt, delete.txt, drop.txt]
-
-````
+    └── 🗃️ [Uses: create.txt, read.txt, update.txt, delete.txt, drop.txt]</pre>
+```
 
 ---
 
@@ -71,21 +68,19 @@ Menu-driven program that lets users perform arithmetic using data structures:
 ## 🚀 How to Run
 
 ### 📦 1. Compile All Classes
-```
+```bash
 javac *.java
-````
+```
 
 ### ▶️ 2. Run MainHub (Entry Point)
-
-```
+```bash
 java MainHub
 ```
 
 ### 🖼️ 3. Run JavaFX GUI (CrudGuiApp)
-
 Make sure JavaFX and Oracle DB are properly configured:
 
-``
+```bash
 java --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml -cp .:ojdbc8.jar CrudGuiApp
 ```
 
@@ -106,7 +101,6 @@ CREATE TABLE users (
 ```
 
 🔐 Update credentials in `CrudGuiApp.java`:
-
 ```java
 String url = "jdbc:oracle:thin:@localhost:1521:xe";
 String user = "your_username";
@@ -118,12 +112,11 @@ String password = "your_password";
 ## 📂 Required Text Files
 
 Ensure these files are present for `CrudConsoleApp`:
-
-* 📝 `create.txt`
-* 🔍 `read.txt`
-* ✏️ `update.txt`
-* ❌ `delete.txt`
-* 🗑 `drop.txt`
+- 📝 `create.txt`
+- 🔍 `read.txt`
+- ✏️ `update.txt`
+- ❌ `delete.txt`
+- 🗑 `drop.txt`
 
 These simulate storage for CRUD operations.
 
@@ -137,13 +130,5 @@ These simulate storage for CRUD operations.
 
 ## 📜 License
 
-📚 *This project is for academic and educational purposes only.*
+📚 *This project is for academic and educational purposes only.*  
 ❌ No commercial use is permitted.
-
-```
-
----
-
-✅ Just copy this into a file named `README.md` in your GitHub repository root folder.  
-Want a `LICENSE` or `.gitignore` file next?
-```
